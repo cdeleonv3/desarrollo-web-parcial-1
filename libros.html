@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LibrosUMG - Libros</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top bg-body shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+        <i class="bi bi-book-half me-2" aria-hidden="true"></i> LibrosUMG
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars"
+        aria-controls="navbars" aria-expanded="false" aria-label="Alternar navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbars">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="perfil.html">Perfil</a></li>
+          <li class="nav-item"><a class="nav-link active" href="libros.html" aria-current="page">Libros</a></li>
+          <li class="nav-item"><a class="nav-link" href="creditos.html">Créditos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="py-5 bg-body-tertiary border-bottom">
+    <div class="container">
+      <h1 class="display-6 mb-1">Catálogo de libros</h1>
+      <p class="text-secondary mb-0">Todos los datos e imágenes son de ejemplo.</p>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <div class="row g-3 align-items-center mb-4">
+      <div class="col-md-8">
+        <div class="input-group">
+          <span class="input-group-text" id="buscar"><i class="bi bi-search"></i></span>
+          <input type="text" class="form-control" placeholder="Buscar por título o autor (no funcional)"
+            aria-label="Buscar" aria-describedby="buscar">
+        </div>
+      </div>
+      <div class="col-md-4 d-flex gap-2 justify-content-md-end">
+        <button class="btn btn-outline-secondary btn-sm"><i class="bi bi-funnel me-1"></i> Filtros</button>
+        <button class="btn btn-outline-secondary btn-sm"><i class="bi bi-sort-down me-1"></i> Ordenar</button>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <!-- LISTADO DE LIBROS -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 shadow-sm book-card">
+          <img src="https://picsum.photos/seed/book{i}/600/400" class="card-img-top" alt="Portada del libro {title}">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-start">
+              <div>
+                <h3 class="h6 mb-1">El mapa de las estrellas</h3>
+                <p class="text-secondary small mb-2">por L. Rivera</p>
+              </div>
+              <div class="text-warning small" aria-label="Calificación">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+              </div>
+            </div>
+            <div class="mt-auto d-flex gap-2">
+              <span class="badge text-bg-light border">{genre}</span>
+              <a href="#" class="btn btn-sm btn-primary ms-auto"><i class="bi bi-eye me-1"></i> Ver</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 shadow-sm book-card">
+          <img src="https://picsum.photos/seed/book{i}/600/400" class="card-img-top" alt="Portada del libro {title}">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-start">
+              <div>
+                <h3 class="h6 mb-1">Bosque de susurros</h3>
+                <p class="text-secondary small mb-2">por C. Duarte</p>
+              </div>
+              <div class="text-warning small" aria-label="Calificación">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+              </div>
+            </div>
+            <div class="mt-auto d-flex gap-2">
+              <span class="badge text-bg-light border">{genre}</span>
+              <a href="#" class="btn btn-sm btn-primary ms-auto"><i class="bi bi-eye me-1"></i> Ver</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 shadow-sm book-card">
+          <img src="https://picsum.photos/seed/book{i}/600/400" class="card-img-top" alt="Portada del libro {title}">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-start">
+              <div>
+                <h3 class="h6 mb-1">Crónicas del viento</h3>
+                <p class="text-secondary small mb-2">por M. Salazar</p>
+              </div>
+              <div class="text-warning small" aria-label="Calificación">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+              </div>
+            </div>
+            <div class="mt-auto d-flex gap-2">
+              <span class="badge text-bg-light border">{genre}</span>
+              <a href="#" class="btn btn-sm btn-primary ms-auto"><i class="bi bi-eye me-1"></i> Ver</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 shadow-sm book-card">
+          <img src="https://picsum.photos/seed/book{i}/600/400" class="card-img-top" alt="Portada del libro {title}">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-start">
+              <div>
+                <h3 class="h6 mb-1">Teoría del café</h3>
+                <p class="text-secondary small mb-2">por A. Montalvo</p>
+              </div>
+              <div class="text-warning small" aria-label="Calificación">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+              </div>
+            </div>
+            <div class="mt-auto d-flex gap-2">
+              <span class="badge text-bg-light border">{genre}</span>
+              <a href="#" class="btn btn-sm btn-primary ms-auto"><i class="bi bi-eye me-1"></i> Ver</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 shadow-sm book-card">
+          <img src="https://picsum.photos/seed/book{i}/600/400" class="card-img-top" alt="Portada del libro {title}">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-start">
+              <div>
+                <h3 class="h6 mb-1">El verano infinito</h3>
+                <p class="text-secondary small mb-2">por S. Álvarez</p>
+              </div>
+              <div class="text-warning small" aria-label="Calificación">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+              </div>
+            </div>
+            <div class="mt-auto d-flex gap-2">
+              <span class="badge text-bg-light border">{genre}</span>
+              <a href="#" class="btn btn-sm btn-primary ms-auto"><i class="bi bi-eye me-1"></i> Ver</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 shadow-sm book-card">
+          <img src="https://picsum.photos/seed/book{i}/600/400" class="card-img-top" alt="Portada del libro {title}">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-start">
+              <div>
+                <h3 class="h6 mb-1">Bajo cero</h3>
+                <p class="text-secondary small mb-2">por I. Contreras</p>
+              </div>
+              <div class="text-warning small" aria-label="Calificación">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+              </div>
+            </div>
+            <div class="mt-auto d-flex gap-2">
+              <span class="badge text-bg-light border">{genre}</span>
+              <a href="#" class="btn btn-sm btn-primary ms-auto"><i class="bi bi-eye me-1"></i> Ver</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 shadow-sm book-card">
+          <img src="https://picsum.photos/seed/book{i}/600/400" class="card-img-top" alt="Portada del libro {title}">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-start">
+              <div>
+                <h3 class="h6 mb-1">La última biblioteca</h3>
+                <p class="text-secondary small mb-2">por N. Paredes</p>
+              </div>
+              <div class="text-warning small" aria-label="Calificación">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+              </div>
+            </div>
+            <div class="mt-auto d-flex gap-2">
+              <span class="badge text-bg-light border">{genre}</span>
+              <a href="#" class="btn btn-sm btn-primary ms-auto"><i class="bi bi-eye me-1"></i> Ver</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 shadow-sm book-card">
+          <img src="https://picsum.photos/seed/book{i}/600/400" class="card-img-top" alt="Portada del libro {title}">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-start">
+              <div>
+                <h3 class="h6 mb-1">Notas sobre el tiempo</h3>
+                <p class="text-secondary small mb-2">por J. Rojas</p>
+              </div>
+              <div class="text-warning small" aria-label="Calificación">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+              </div>
+            </div>
+            <div class="mt-auto d-flex gap-2">
+              <span class="badge text-bg-light border">{genre}</span>
+              <a href="#" class="btn btn-sm btn-primary ms-auto"><i class="bi bi-eye me-1"></i> Ver</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 shadow-sm book-card">
+          <img src="https://picsum.photos/seed/book{i}/600/400" class="card-img-top" alt="Portada del libro {title}">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-start">
+              <div>
+                <h3 class="h6 mb-1">Recetas para el alma</h3>
+                <p class="text-secondary small mb-2">por P. González</p>
+              </div>
+              <div class="text-warning small" aria-label="Calificación">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+              </div>
+            </div>
+            <div class="mt-auto d-flex gap-2">
+              <span class="badge text-bg-light border">{genre}</span>
+              <a href="#" class="btn btn-sm btn-primary ms-auto"><i class="bi bi-eye me-1"></i> Ver</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FIN LISTADO DE LIBROS -->
+    </div>
+  </main>
+
+  <footer class="py-5 mt-5 border-top">
+    <div class="container small text-muted d-flex flex-column flex-md-row justify-content-between gap-3">
+      <div>&copy; 2025 LibrosUMG · Todos los derechos reservados.</div>
+      <div class="d-flex gap-3">
+        <a class="link-secondary" href="creditos.html#contacto"><i class="bi bi-envelope"></i> Contacto</a>
+        <a class="link-secondary" href="https://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap</a>
+        <a class="link-secondary" href="libros.html">Catálogo</a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

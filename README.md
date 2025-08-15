@@ -1,2 +1,2 @@
-# desarrollo-web-parcial-1
-Repo para ejercico del primer parcial 2025.
+# Parcial 1
+Repositorio para parte práctica del primer parcial 2025.

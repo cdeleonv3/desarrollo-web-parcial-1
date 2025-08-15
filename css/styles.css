@@ -1,0 +1,53 @@
+:root {
+  --brand: #0d6efd;
+  /* Bootstrap primary */
+  --radius: 1rem;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+.hero-gradient {
+  background: radial-gradient(1200px 600px at 10% 10%, rgba(13, 110, 253, .15), transparent 60%),
+    radial-gradient(800px 400px at 90% 20%, rgba(13, 110, 253, .12), transparent 60%);
+}
+
+.hero-card {
+  border-radius: var(--radius);
+}
+
+.hero-card .card-img {
+  object-fit: cover;
+  height: 100%;
+  max-height: 420px;
+}
+
+.feature .card-body i {
+  color: var(--brand);
+}
+
+.book-card img {
+  object-fit: cover;
+  height: 220px;
+}
+
+.book-card:hover {
+  transform: translateY(-2px);
+  transition: transform .2s ease;
+}
+
+.navbar-brand {
+  letter-spacing: .3px;
+}
+
+footer {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.02), transparent 30%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .book-card:hover {
+    transform: none;
+  }
+}
